@@ -4,13 +4,13 @@ export default function Home() {
     return (
         <div className="mt-56 sm:mt-c1 md:mt-c2">
             {/* Cake section */}
-            <section className="cake-slider-bg-color flex flex-col items-center justify-center h-[70vh]">
+            <section className="cake-slider-bg-color flex flex-col items-center justify-center h-[90vh]">
                 <h3 className="text-[#554242] text-sm">image of cake</h3>
                 <h4 className="text-[#554242] text-sm">(scrolling through)</h4>
             </section>
 
             {/* Welcome section */}
-            <section className="flex flex-col md:flex-row md:justify-between h-[70vh]">
+            <section className="flex flex-col md:flex-row md:justify-between h-[90vh]">
                 <div className="mt-10 flex flex-col ml-4 md:ml-36 md:w-1/3">
                     <h1 className="tracking-wide text-4xl">welcome</h1>
                     <p className="text-base mt-6 mb-4">My baking journey began with a simple monochromatic green heart-shaped cake for my mom’s birthday. Baking started as a hobby to delight both family and friends during birthdays, anniversaries, and special occasions. My home kitchen became a cake bakery studio for my creativity with all the grace and support of my lovely partner.</p>

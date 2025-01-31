@@ -1,7 +1,9 @@
+import Title from "../../components/Title/Title";
+
 export default function Resources() {
     return (
-        <div className="pt-96">
-            Resources page
+        <div>
+            <Title titleOfPage="resources" />
         </div>
     );
 }

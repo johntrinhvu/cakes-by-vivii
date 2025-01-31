@@ -1,7 +1,9 @@
+import Title from "../../components/Title/Title";
+
 export default function Contact() {
     return (
-        <div className="pt-96">
-            Contact page
+        <div>
+            <Title titleOfPage="contact" />
         </div>
     );
 }

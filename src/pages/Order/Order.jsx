@@ -1,7 +1,9 @@
+import Title from "../../components/Title/Title";
+
 export default function Order() {
     return (
-        <div className="pt-96">
-            Order page
+        <div>
+            <Title titleOfPage="order" />
         </div>
     );
 }

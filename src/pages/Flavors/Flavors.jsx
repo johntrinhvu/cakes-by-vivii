@@ -2,6 +2,7 @@ import Title from "../../components/Title/Title";
 import HorizontalBox from "../../components/HorizontalBox/HorizontalBox";
 import VerticalBox from "../../components/VerticalBox/VerticalBox";
 import { FaCircle, FaHeart } from "react-icons/fa6";
+import "./Flavors.css";
 
 export default function Flavors() {
     return (
@@ -14,11 +15,15 @@ export default function Flavors() {
                         <div className="flex flex-col items-end">
                             <div className="flex items-center gap-3">
                                 <span>Round</span>
-                                <FaCircle className="text-black text-2xl sm:w-7 sm:h-7 md:w-8 md:h-8" />
+                                <div>
+                                    <FaCircle className="round-shadow text-[#554242] text-2xl w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
+                                </div>
                             </div>
                             <div className="flex items-center gap-3 mt-2">
                                 <span>Heart</span>
-                                <FaHeart className="text-black text-2xl sm:w-7 sm:h-7 md:w-8 md:h-8" />
+                                <div>
+                                    <FaHeart className="hearticon-shadow text-[#554242] text-2xl w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
+                                </div>
                             </div>
                         </div>
                     </HorizontalBox>
@@ -46,7 +51,7 @@ export default function Flavors() {
                             <h3 className="text-md sm:text-lg md:text-xl font-semibold mt-6 tracking-widest">CLASSIC</h3>
                             <p className="mt-2">Yellow Vanilla</p>
                             <p>White Vanilla</p>
-                            <p>Chocolate Vanilla</p>
+                            <p>Chocolate</p>
                         </div>
 
                         <div>
@@ -67,7 +72,7 @@ export default function Flavors() {
                             <h3 className="text-md sm:text-lg md:text-xl font-semibold mt-6 tracking-widest">CLASSIC</h3>
                             <p className="mt-2">Yellow Vanilla</p>
                             <p>White Vanilla</p>
-                            <p>Chocolate Vanilla</p>
+                            <p>Chocolate</p>
                         </div>
 
                         <div>

@@ -5,13 +5,11 @@ import Home from "../Home/Home";
 import './App.css';
 
 export default function App() {
-  const [navHeight, setNavHeight] = useState(72);
-
   return (
     <main>
-      <Header setNavHeight={setNavHeight} />
+      <Header />
       <Routes>
-        <Route path="/" element={<Home navHeight={navHeight} />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </main>
   );

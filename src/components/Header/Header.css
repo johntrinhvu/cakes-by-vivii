@@ -1,3 +1,7 @@
+.logo-bg-color {
+    background-color: #FBF9FF;
+}
+
 .top-rectangle {
     background-color: #EDE5DC;
 }
@@ -13,3 +17,26 @@
 .nav-text-color {
     color: #554242;
 }
+
+.order-button-color {
+    background-color: #664382;
+}
+
+.order-button-color:hover {
+    color: #EAD7D7;
+    background-color: #554242;
+}
+
+.active-text-color {
+    color: #664372;
+}
+
+.active-span-color {
+    background-color: #664372;
+}
+
+.active-text-color:hover {
+    color: white;
+}
+
+/* hover == white, active = purple with span on bottom */

@@ -32,11 +32,11 @@ export default function Flavors() {
                         <div className="flex flex-col">
                             <div className="flex gap-3">
                                 <h4 className="font-bold">6 inch</h4>
-                                <p>serves 6-8 generously or 8-12 with regular portions</p>
+                                <p className="italic">serves 6-8 generously or 8-12 with regular portions</p>
                             </div>
                             <div className="flex gap-3 mt-2">
                                 <h4 className="font-bold">8 inch</h4>
-                                <p>serves 14-16 generously or 20-24 with regular portions</p>
+                                <p className="italic">serves 14-16 generously or 20-24 with regular portions</p>
                             </div>
                         </div>
                     </HorizontalBox>
@@ -60,7 +60,7 @@ export default function Flavors() {
                         </div>
 
                         <div>
-                            <h3 className="text-sm sm:text-lg md:text-xl font-semibold mt-4 tracking-widest">SPECIALTY</h3>
+                            <h3 className="text-md sm:text-lg md:text-xl font-semibold mt-4 tracking-widest">SPECIALTY</h3>
                             <p className="mt-2">Cookies & Creme</p>
                             <p>Red Velvet</p>
                         </div>
@@ -102,7 +102,7 @@ export default function Flavors() {
                         </div>
 
                         <div>
-                            <h3 className="text-md sm:text-lg md:text-xl font-semibold mt-4 tracking-widest">MODERN</h3>
+                            <h3 className="text-md sm:text-lg md:text-xl font-bold mt-4 tracking-widest">MODERN</h3>
                             <p className="mt-2">Modern cakes feature a minimalist design. These cakes are typically have fresh greenery like rosemary and are topped with a selection of fruits for a natural taste.</p>
                         </div>
 

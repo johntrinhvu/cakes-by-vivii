@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import { FaBars, FaHeart, FaCakeCandles } from "react-icons/fa6";
 import './Header.css';
@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 export default function Header({ footerRef }) {
     const [isNavVisible, setNavVisible] = useState(false);
     const [isAboveFooter, setIsAboveFooter] = useState(false);
+    const location = useLocation();
 
     // This code is for the footer and mobile order button
     useEffect(() => {
@@ -33,11 +34,15 @@ export default function Header({ footerRef }) {
             {/* Logo and order now button */}
             <div id="header" className="flex items-center justify-center text-center py-4 sm:py-5 md:py-6 logo-bg-color">
                 <Logo />
-                <NavLink to="/order" className="absolute right-10 hidden sm:block md:right-20 tracking-wide">
-                    <button className="order-button-color text-white px-8 py-3 md:px-10 md:py-4 rounded-lg text-lg sm:text-xl transition shadow-md shadow-zinc-400">
-                        order now
-                    </button>
-                </NavLink>
+
+                {/* Hide button when on /order */}
+                {location.pathname !== '/order' && (
+                    <NavLink to="/order" className="absolute right-10 hidden sm:block md:right-20 tracking-wide">
+                        <button className="order-button-color text-white px-8 py-3 md:px-10 md:py-4 rounded-lg text-lg sm:text-xl transition shadow-md shadow-zinc-400">
+                            order now
+                        </button>
+                    </NavLink>
+                )}
             </div>
 
             {/* Navbar */}
@@ -121,12 +126,16 @@ export default function Header({ footerRef }) {
             </div>
 
             {/* Floating mobile "Order Now" */}
-            <NavLink to="/order" className="sm:hidden fixed bottom-4 right-4 z-50" style={{ bottom: isAboveFooter ? '150px' : '16px' }}>
-                <div className="relative w-24 h-24 flex items-center justify-center">
-                    <FaHeart className="text-[#664382] text-9xl heart-shadow hover:text-[#554242]" />
-                    <span className="absolute text-white text-sm tracking-wider font-bold mb-3 hover:text-[#EAD7D7]">order now</span>
-                </div>
-            </NavLink>
+            {/* Hide when on order page too */}
+            {location.pathname !== '/order' && (
+                <NavLink to="/order" className="sm:hidden fixed bottom-4 right-4 z-50" style={{ bottom: isAboveFooter ? '150px' : '16px' }}>
+                    <div className="relative w-24 h-24 flex items-center justify-center">
+                        <FaHeart className="text-[#664382] text-9xl heart-shadow hover:text-[#554242]" />
+                        <span className="absolute text-white text-sm tracking-wider font-bold mb-3 hover:text-[#EAD7D7]">order now</span>
+                    </div>
+                </NavLink>
+
+            )}
         </header>
         
     );

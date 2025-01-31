@@ -2,9 +2,9 @@ import Logo from "../Logo/Logo";
 import { FaLocationDot, FaEnvelope, FaInstagram } from "react-icons/fa6";
 import "./Footer.css";
 
-export default function Footer() {
+export default function Footer({ footerRef }) {
     return (
-        <footer className="w-full flex flex-col mt-auto">
+        <footer ref={footerRef} className="w-full flex flex-col mt-auto">
             <span className="w-full top-rectangle h-1.5 mb-2.5 shadow-md shadow-zinc-400"></span>
 
             <div className="flex justify-between middle-rectangle w-full py-6">

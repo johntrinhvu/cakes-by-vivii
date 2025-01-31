@@ -27,26 +27,25 @@
     background-color: #554242;
 }
 
-.active-text-color {
-    color: #664372;
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    transition: 0.1s ease;
 }
 
-.active-span-color {
-    background-color: #664372;
-}
-
-.active-text-color:hover {
+.nav-link:hover {
     color: white;
 }
 
-#heart {
-    clip-path: path("M24 8C24 3.58172 20.4183 0 16 0C13.2894 0 10.8172 1.34683 9.5 3.50001C8.18279 1.34683 5.71062 0 3 0C-1.41828 0 -5 3.58172 -5 8C-5 15 10.75 23.875 16 32C21.25 23.875 37 15 37 8Z");
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1rem;
-    padding: 10px;
+.nav-link.active {
+    color: #664372; 
 }
 
-/* hover == white, active = purple with span on bottom */
+.nav-link.active .nav-span {
+    background-color: #664372;
+    height: 0.125rem;
+}
+
+.heart-shadow {
+    filter: drop-shadow(0px 8px 9px rgba(161, 161, 170, 0.75));
+}

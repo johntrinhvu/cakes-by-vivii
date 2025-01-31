@@ -13,7 +13,7 @@ export default function Order() {
                 <span className="block w-full top-rectangle mb-2.5 h-1.5 shadow-md shadow-zinc-400"></span>
             </div>
 
-            
+
         </div>
     );
 }

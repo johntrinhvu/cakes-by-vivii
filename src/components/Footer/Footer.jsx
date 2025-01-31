@@ -1,6 +1,6 @@
 import Logo from "../Logo/Logo";
 import { FaLocationDot, FaEnvelope, FaInstagram } from "react-icons/fa6";
-
+import "./Footer.css";
 
 export default function Footer() {
     return (
@@ -12,21 +12,21 @@ export default function Footer() {
                     <Logo />
                 </div>
 
-                <div className="mt-1.5 sm:mt-1 flex flex-col mr-2 sm:mr-6 md:mr-10 text-sm sm:text-md md:text-lg">
-                    <div className="flex">
+                <div className="mt-0.5 sm:mt-0 flex flex-col mr-2 sm:mr-6 md:mr-10 text-sm sm:text-md md:text-lg">
+                    <div className="flex footer-text-color transition">
                         <FaLocationDot className="mt-1 mr-2" />
                         <p>Annandale, Virginia, U.S.</p>
                     </div>
 
-                    <div className="flex">
+                    <div className="flex footer-text-color transition">
                         <FaEnvelope className="mt-1.5 mr-2" />
                         <p className="mt-0.5 md:mt-0">cakesbyvivii@gmail.com</p>
                     </div>
 
-                    <div className="flex">
+                    <a href="https://www.instagram.com/cakesbyvivii/" className="flex footer-text-color transition">
                         <FaInstagram className="mt-1.5 mr-2" />
                         <p className="mt-0.5 md:mt-0">@cakesbyvivii</p>
-                    </div>
+                    </a>
                 </div>
 
             </div>

@@ -39,4 +39,14 @@
     color: white;
 }
 
+#heart {
+    clip-path: path("M24 8C24 3.58172 20.4183 0 16 0C13.2894 0 10.8172 1.34683 9.5 3.50001C8.18279 1.34683 5.71062 0 3 0C-1.41828 0 -5 3.58172 -5 8C-5 15 10.75 23.875 16 32C21.25 23.875 37 15 37 8Z");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+}
+
 /* hover == white, active = purple with span on bottom */

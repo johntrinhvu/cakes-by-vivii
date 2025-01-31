@@ -6,6 +6,7 @@ import { useState, useEffect, useRef } from "react";
 export default function Header() {
     return (
         <header className="w-full fixed top-0">
+            {/* Logo and order now button */}
             <div id="header" className="flex items-center justify-center text-center py-4 sm:py-5 md:py-6 logo-bg-color">
                 <Logo />
                 <Link to="/order" className="absolute right-10 hidden sm:block md:right-20 tracking-wide">
@@ -15,7 +16,8 @@ export default function Header() {
                 </Link>
             </div>
 
-            <div className={`w-full flex flex-col`}>
+            {/* Navbar */}
+            <div className="w-full flex flex-col">
                 <span className="block w-full top-rectangle mb-2.5 h-1.5 shadow-md shadow-zinc-400"></span>
 
                 <nav className="w-full flex middle-rectangle justify-center transition-all duration-300 py-7 shadow-md shadow-zinc-400">
@@ -44,6 +46,13 @@ export default function Header() {
 
                 <span className="block w-full lower-rectangle mt-2.5 h-1.5 shadow-md shadow-zinc-400"></span>
             </div>
+
+            {/* Floating mobile "Order Now" */}
+            <Link to="/order" className="sm:hidden fixed bottom-4 left-4 z-50">
+                <button className="rounded-lg order-button-color px-4 py-3 text-white text-lg transition shadow-md shadow-zinc-400">
+                    order now
+                </button>
+            </Link>
         </header>
         
     );

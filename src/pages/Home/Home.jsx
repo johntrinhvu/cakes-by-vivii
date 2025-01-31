@@ -10,17 +10,17 @@ export default function Home() {
             </section>
 
             {/* Welcome section */}
-            <section className="flex flex-col md:flex-row md:justify-between h-[90vh]">
-                <div className="mt-10 flex flex-col ml-4 md:ml-36 md:w-1/3">
-                    <h1 className="tracking-wide text-4xl">welcome</h1>
-                    <p className="text-base mt-6 mb-4">My baking journey began with a simple monochromatic green heart-shaped cake for my mom’s birthday. Baking started as a hobby to delight both family and friends during birthdays, anniversaries, and special occasions. My home kitchen became a cake bakery studio for my creativity with all the grace and support of my lovely partner.</p>
+            <section className="flex flex-col sm:flex-row justify-between items-start px-6 sm:px-12 md:px-20 gap-10 py-14">
+                <div className="flex flex-col sm:w-1/2">
+                    <h1 className="tracking-wide text-4xl mb-4">welcome</h1>
+                    <p className="text-base mt-10 mb-4">My baking journey began with a simple monochromatic green heart-shaped cake for my mom’s birthday. Baking started as a hobby to delight both family and friends during birthdays, anniversaries, and special occasions. My home kitchen became a cake bakery studio for my creativity with all the grace and support of my lovely partner.</p>
                     <p className="text-base mb-4">Soon, my cakes continued to travel through word of mouth beyond my friends and family. More friends and friends of their friends began to request my cakes which inspired to me to share my passion. I designed this website for ease to explore my cakes, customize, and order a cake tailored to your occasion.</p>
-                    <p className="mb-4">Thank you for visiting! I hope our cakes will be a part of your special moments.</p>
+                    <p className="">Thank you for visiting! I hope our cakes will be a part of your special moments.</p>
                 </div>
 
-                <div className="mt-10 flex flex-col ml-4 md:ml-0 md:mr-36 md:w-1/3">
-                    <h1 className="tracking-wide text-4xl">location</h1>
-                    <p className="text-base mt-6 mb-4">Cake pickup  is local to the DMV region in the heart of Annandale, Virginia.</p>
+                <div className="flex flex-col sm:w-1/2">
+                    <h1 className="tracking-wide text-4xl mb-4">location</h1>
+                    <p className="text-base mt-10 mb-4">Cake pickup  is local to the DMV region in the heart of Annandale, Virginia.</p>
                     <p className="text-base">Delivery is unavailable at this time.</p>
                 </div>
             </section>

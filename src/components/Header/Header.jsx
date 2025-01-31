@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Logo from "../Logo/Logo";
 import './Header.css';
 import { useState, useEffect, useRef } from "react";
 
@@ -6,10 +7,7 @@ export default function Header() {
     return (
         <header className="w-full fixed top-0">
             <div id="header" className="flex items-center justify-center text-center py-4 sm:py-5 md:py-6 logo-bg-color">
-                <div className="transform text-center">
-                    <h1 className="text-2xl font-bold tracking-wide text-3xl sm:text-4xl md:text-[40px] kurale-regular">CAKES</h1>
-                    <p className="lavishly-yours-regular text-4xl sm:text-[40px] md:text-5xl">by vivii</p>
-                </div>
+                <Logo />
                 <Link to="/order" className="absolute right-10 hidden sm:block md:right-20 tracking-wide">
                     <button className="order-button-color text-white px-8 py-3 md:px-10 md:py-4 rounded-lg text-lg sm:text-xl transition shadow-md shadow-zinc-400">
                         order now

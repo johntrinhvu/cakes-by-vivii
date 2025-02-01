@@ -30,7 +30,7 @@ export default function Header({ footerRef }) {
     }
 
     return (
-        <header className="w-full fixed top-0">
+        <header className="w-full fixed top-0 z-50">
             {/* Logo and order now button */}
             <div id="header" className="flex items-center justify-center text-center py-4 sm:py-5 md:py-6 logo-bg-color">
                 <Logo />

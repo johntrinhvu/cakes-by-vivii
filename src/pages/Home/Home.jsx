@@ -1,12 +1,28 @@
 import "./Home.css";
+import SlidingImages from "../../components/ImageSlider/ImageSlider";
+import Cake1 from "../../assets/cake.jpg";
+import Cake2 from "../../assets/cake2.jpeg";
+import Cake3 from "../../assets/cake3.jpg";
+import Cake4 from "../../assets/cake4.jpg";
+import Cake5 from "../../assets/cake5.jpg";
 
 export default function Home() {
+    // Cake Images
+    const image = [
+        {url: Cake1, title: 'Cake 1'},
+        {url: Cake2, title: 'Cake 2'},
+        {url: Cake3, title: 'Cake 3'},
+        {url: Cake4, title: 'Cake4'},
+        {url: Cake5, title: 'Cake5'}
+    ]
+
     return (
         <div className="mt-56 sm:mt-c1 md:mt-c2">
             {/* Cake section */}
             <section className="cake-slider-bg-color flex flex-col items-center justify-center h-[90vh]">
-                <h3 className="text-[#554242] text-sm">image of cake</h3>
-                <h4 className="text-[#554242] text-sm">(scrolling through)</h4>
+                <div className="size-full mx-auto">
+                    <SlidingImages slides={ image } />
+                </div>
             </section>
 
             {/* Welcome section */}
@@ -31,6 +47,5 @@ export default function Home() {
                 </div>
             </section>
         </div>
-
     );
 }

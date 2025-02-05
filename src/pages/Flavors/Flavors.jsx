@@ -82,7 +82,7 @@ export default function Flavors() {
 
                         <div>
                             <h3 className="text-md sm:text-lg md:text-xl font-semibold mt-4 tracking-widest">CREAM & FRUIT</h3>
-                            <p>Chantilly Cream</p>
+                            <p className="mt-2">Chantilly Cream</p>
                             <p>+</p>
                             <p>Any fruit option</p>
                         </div>

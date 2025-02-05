@@ -1,4 +1,4 @@
-import MultiStepForm from "../../components/MultiStepForm/MultiStepForm";
+import OrderForm from "../../components/OrderForm/OrderForm";
 
 export default function Order() {
     return (
@@ -12,7 +12,7 @@ export default function Order() {
                 <span className="block w-full top-rectangle mb-2.5 h-1.5 shadow-md shadow-zinc-400"></span>
             </div>
 
-            <MultiStepForm />
+            <OrderForm />
 
         </div>
     );

@@ -47,7 +47,7 @@ export default function StepTwo({ formData, handleChange }) {
             <div className="mt-4 flex items-center">
                 <label className="text-sm font-medium w-1/2">Flavor of Cake</label>
                 <select
-                    name="flavorOfCake" value={formData.email} onChange={handleChange}
+                    name="flavorOfCake" value={formData.flavor} onChange={handleChange}
                     className="w-11/12 px-3 border rounded-full shadow-md shadow-zinc-400"
                 >
                     <option value="Classic">Classic</option>
@@ -60,7 +60,7 @@ export default function StepTwo({ formData, handleChange }) {
             <div className="mt-4 flex items-center">
                 <label className="text-sm font-medium w-1/5">Filling</label>
                 <select
-                    name="flavorOfCake" value={formData.email} onChange={handleChange}
+                    name="filling" value={formData.filling} onChange={handleChange}
                     className="w-11/12 px-3 border rounded-full shadow-md shadow-zinc-400"
                 >
                     <option value="Classic">Classic</option>
@@ -74,7 +74,7 @@ export default function StepTwo({ formData, handleChange }) {
             <div className="mt-4 flex items-center">
                 <label className="text-sm font-medium w-1/4">Frosting</label>
                 <select
-                    name="flavorOfCake" value={formData.email} onChange={handleChange}
+                    name="frosting" value={formData.frosting} onChange={handleChange}
                     className="w-11/12 px-3 border rounded-full shadow-md shadow-zinc-400"
                 >
                     <option value="Classic">Classic</option>

@@ -6,9 +6,9 @@ import "./Flavors.css";
 
 export default function Flavors() {
     return (
-        <div>
+        <div className="mx-auto">
             <Title titleOfPage="flavor menu" />
-            <div className="flex flex-col justify-center gap-6 p-10">
+            <div className="mx-auto flex flex-col justify-center gap-6 p-10">
                 {/* Shape and Size */}
                 <div className="flex flex-col md:flex-row gap-10">
                     <HorizontalBox title="Shape" bgColor="bg-[#C9C8D9]">
@@ -43,7 +43,7 @@ export default function Flavors() {
                 </div>
 
                 {/* Filling/Styles */}
-                <div className="flex flex-col md:flex-row gap-10 mt-6">
+                <div className="mx-auto flex flex-col md:flex-row gap-10 mt-6">
 
                     {/* Flavors */}
                     <VerticalBox title="Flavors" bgColor="bg-[#DDCBE1]">

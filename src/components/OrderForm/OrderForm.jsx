@@ -42,24 +42,24 @@ export default function OrderForm() {
     const prevStep = () => setStep(step - 1);
 
     return (
-        <div className="max-w-lg mx-auto mb-10 contact-bg p-6 shadow-md shadow-zinc-400 rounded-lg mt-10">
+        <div className="ml-4 mr-4 mb-10 contact-bg pt-10 pl-10 pr-10 pb-6 sm:pt-16 sm:pl-16 sm:pr-16 sm:pb-10 sm:mx-auto shadow-md shadow-zinc-400 rounded-3xl mt-10">
             {step === 1 && <StepOneForm formData={formData} handleChange={handleChange} />}
             {step === 2 && <StepTwoForm formData={formData} handleChange={handleChange} />}
             {step === 3 && <StepThreeForm formData={formData} handleChange={handleChange} />}
 
             {/* Navigation Buttons */}
-            <div className="flex justify-between mt-6">
+            <div className={`flex mt-6 ${step > 1 ? 'justify-between' : 'justify-end'}`}>
                 {step > 1 && (
-                    <button onClick={prevStep} className="bg-[#664382] text-white px-6 py-2 rounded-lg shadow-md">
+                    <button onClick={prevStep} className="bg-[#664382] text-white px-10 py-2 rounded-full shadow-md shadow-zinc-400">
                         Back
                     </button>
                 )}
                 {step < 3 ? (
-                    <button onClick={nextStep} className="bg-[#664382] text-white px-6 py-2 rounded-lg shadow-md">
+                    <button onClick={nextStep} className="bg-[#664382] text-white px-10 py-2 rounded-full shadow-md shadow-zinc-400">
                         Next
                     </button>
                 ) : (
-                    <button onClick={() => alert("Order Submitted!")} className="bg-green-600 text-white px-6 py-2 rounded-lg shadow-md">
+                    <button onClick={() => alert("Order Submitted!")} className="bg-green-600 text-white px-10 py-2 rounded-full shadow-md shadow-zinc-400">
                         Submit
                     </button>
                 )}

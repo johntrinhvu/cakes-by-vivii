@@ -59,7 +59,7 @@ export default function OrderForm() {
                         Next
                     </button>
                 ) : (
-                    <button onClick={() => alert("Order Submitted!")} className="bg-green-600 text-white px-10 py-2 rounded-full shadow-md shadow-zinc-400 transition ease-in-out hover:bg-[#554242] hover:text-[#EAD7D7]">
+                    <button onClick={() => alert("Order Submitted!")} className="bg-[#664382] text-white px-10 py-2 rounded-full shadow-md shadow-zinc-400 transition ease-in-out hover:bg-[#554242] hover:text-[#EAD7D7]">
                         Submit
                     </button>
                 )}

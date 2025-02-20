@@ -4,6 +4,8 @@ export default function Contact() {
     return (
         <div>
             <Title titleOfPage="contact" />
+            <div>
+            </div>
         </div>
     );
 }

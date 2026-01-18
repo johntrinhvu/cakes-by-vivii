@@ -49,3 +49,7 @@
 .heart-shadow {
     filter: drop-shadow(0px 8px 9px rgba(161, 161, 170, 0.75));
 }
+
+.floating-order-button {
+    transition: bottom 0.2s ease-in-out;
+}

@@ -126,9 +126,8 @@ export default function Header({ footerRef }) {
             </div>
 
             {/* Floating mobile "Order Now" */}
-            {/* Hide when on order page too */}
             {location.pathname !== '/order' && (
-                <NavLink to="/order" className="sm:hidden fixed bottom-4 right-4 z-50" style={{ bottom: isAboveFooter ? '150px' : '16px' }}>
+                <NavLink to="/order" className="sm:hidden fixed bottom-4 right-4 z-50 floating-order-button" style={{ bottom: isAboveFooter ? '150px' : '16px' }}>
                     <div className="relative w-24 h-24 flex items-center justify-center">
                         <FaHeart className="text-[#664382] text-9xl heart-shadow hover:text-[#554242]" />
                         <span className="absolute text-white text-sm tracking-wider font-bold mb-3 hover:text-[#EAD7D7]">order now</span>
